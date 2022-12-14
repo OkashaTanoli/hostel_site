@@ -1,0 +1,127 @@
+@font-face {
+    font-family: noto;
+    src: url(../../fonts/NotoSansSC-Black.otf);
+}
+
+@font-face {
+    font-family: noto_regular;
+    src: url(../../fonts/NotoSansSC-Regular.otf);
+}
+
+.footer {
+    width: 100%;
+    padding: 50px 0;
+    border-top: 1px solid rgb(228, 228, 228);
+}
+
+.footer_sub_div {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+
+.footer_sub_div_block {
+    width: 30%;
+}
+
+.footer_sub_div_block h2 {
+    color: rgb(38, 38, 38);
+    font-family: noto;
+    letter-spacing: 3px;
+}
+
+.follow_us_text {
+    font-family: noto_regular;
+    color: rgb(39, 39, 39);
+    margin-top: 30px;
+    word-spacing: 2px;
+    font-size: 14px;
+}
+
+.icons_div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 90%;
+}
+
+.icon_div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #745434;
+}
+
+.single_contact_detail {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.single_contact_detail p {
+    margin-left: 20px;
+    font-family: noto_regular;
+    color: rgb(39, 39, 39);
+    letter-spacing: 1px;
+    font-size: 14px;
+
+}
+
+.news_letter_div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.news_letter_div input {
+    padding: 20px 10px;
+    border: 2px solid #745434;
+    width: 55%;
+}
+.news_letter_div button {
+    padding: 20px 10px;
+    width: 35%;
+    background-color: #745434;
+    color: #fff;
+    font-family:noto ;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.news_letter_div input:focus {
+    outline: none;
+}
+
+
+
+
+@media (max-width:1120px) {
+    .footer_sub_div {
+        width: 90%;
+    }
+}
+
+
+@media (max-width:900px) {
+    .footer_sub_div {
+        display: block;
+    }
+    .footer_sub_div_block {
+        width: 100%;
+        border-bottom: 1px solid rgb(230, 230, 230);
+        padding-bottom: 20px;
+    }
+    .icons_div {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        width: 250px;
+    }
+}
+

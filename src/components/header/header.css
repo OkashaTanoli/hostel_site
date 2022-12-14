@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(228, 228, 228);
+    padding: 20px 0 ;
+    position: relative;
+
+}
+.header img{
+    z-index: 1;
+    /* filter: drop-shadow(0 0 50px rgb(0, 0, 0)); */
+}
+.first{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 110%;
+    background-color: #745434;
+    clip-path: polygon(0 0, 100% 0, 68% 100%, 0% 100%);
+}

@@ -1,0 +1,324 @@
+@font-face {
+    font-family: noto;
+    src: url(../../fonts/NotoSansSC-Black.otf);
+}
+
+@font-face {
+    font-family: noto_regular;
+    src: url(../../fonts/NotoSansSC-Regular.otf);
+}
+
+@font-face {
+    font-family: lato_regular;
+    src: url(../../fonts/Lato/Lato-Regular.ttf);
+}
+
+.main_div {
+    width: 1100px;
+    margin: 100px auto;
+}
+
+.main_block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider_div {
+    width: 70%;
+}
+
+.enquiry_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.enquiry_form form {
+    width: 100%;
+}
+
+.enquiry_details {
+    width: 30%;
+    border: 1px solid rgb(227, 227, 227);
+}
+
+.enquiry_heading {
+    font-size: 17px;
+    text-align: center;
+    font-family: noto_regular;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    margin-top: 0px;
+    padding: 10px 0;
+    color: rgb(53, 53, 53);
+    word-spacing: 2px;
+}
+
+.enquiry_form_fields {
+    background-color: #F7F7F7;
+    width: 80%;
+    margin: 10px auto;
+    padding: 5px 15px;
+    border-radius: 7px;
+}
+
+.enquiry_form_fields p {
+    font-size: 11px;
+    font-weight: 700;
+    color: rgb(65, 65, 65);
+    margin: 0;
+}
+
+.enquiry_form_fields input, .enquiry_form_fields textarea {
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    padding: 5px 0 0;
+    resize: none;
+    width: 100%;
+}
+
+.enquiry_form_fields input, .enquiry_form_fields textarea:focus {
+    outline: none;
+}
+
+.enquiry_form_fields input::-webkit-outer-spin-button,
+.enquiry_form_fields input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.enquiry_form_fields input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.submit_btn_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.submit_btn_div button {
+    font-size: 12px;
+    font-family: noto;
+    color: white;
+    background-color: #745434;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.hostel_list_name {
+    font-size: 30px;
+    font-family: lato_regular;
+    word-spacing: 5px;
+    /* line-height: 10px; */
+}
+
+.over_view_div {
+    width: 100%;
+    border: 1px solid rgb(227, 227, 227);
+    margin-top: 100px;
+}
+
+.over_view_heading {
+    margin: 0;
+    font-size: 26px;
+    font-family: lato_regular;
+    color: rgb(28, 28, 28);
+    font-weight: 600;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(227, 227, 227);
+}
+
+.over_view_content_div {
+    padding: 20px;
+}
+
+.over_view_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: #F7F7F7;
+    margin-bottom: 20px;
+}
+
+.over_view_content div {
+    width: 30%;
+}
+
+.bed_info_div {
+    font-family: lato_regular;
+    font-weight: 500;
+    color: #222222;
+    font-size: 17px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pricing_div, .bed_quantity {
+    font-family: lato_regular;
+    font-weight: 700;
+    font-size: 14px;
+    color: #222222;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pricing_div span, .bed_quantity span {
+    font-weight: 500 !important;
+}
+
+.facilities_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.facility_info_div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 10px;
+    background-color: #F7F7F7;
+    margin-bottom: 20px;
+}
+
+.location_commission_div {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location_commission_div div {
+    width: 50%;
+}
+
+.location_div {
+    padding: 20px 10px;
+    background-color: #222222;
+    color: white;
+    font-family: lato_regular;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    word-spacing: 3px;
+    box-sizing: border-box;
+}
+
+.note {
+    font-weight: 700;
+    color: rgb(168, 2, 2);
+}
+
+.sent_message, .error_message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sent_message {
+    background-color: green !important;
+}
+
+.error_message {
+    background-color: rgb(168, 13, 18) !important;
+}
+
+
+
+/* Loading Animation  */
+
+
+.loader_div{
+    padding: 10px 45px !important;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    /* Light grey */
+    border-top: 4px solid #a37e59;
+    /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+@media (max-width:1150px) {
+    .main_div {
+        width: 90%;
+    }
+}
+
+@media (max-width:950px) {
+    .main_div {
+        width: 90%;
+    }
+
+    .main_block {
+        display: block;
+    }
+
+    .slider_div {
+        width: 100%;
+    }
+
+    .enquiry_details {
+        width: 100%;
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .over_view_content {
+        display: block;
+    }
+
+    .over_view_content div {
+        width: 100%;
+        padding: 15px 0;
+        border-bottom: 1px solid rgb(227, 227, 227);
+    }
+
+    .location_commission_div {
+        display: block;
+    }
+
+    .location_commission_div div {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+
+@media (max-width:600px) {
+    .main_div {
+        width: 90%;
+    }
+
+    .facilities_content {
+        display: block;
+    }
+}
